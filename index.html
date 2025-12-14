@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="uk">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1" />
+		<title>WebStudio</title>
+		<link rel="stylesheet" href="styles.css" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Roboto:wght@400;500;700;900&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<div class="backdrop is-hidden" data-modal>
+		<div class="modal">
+			<button type="button" class="modal-close" data-modal-close>
+				&times;
+			</button>
+
+			<h2 class="modal-title">Залиште свої дані, ми вам передзвонимо</h2>
+
+			<form class="modal-form">
+				<label class="modal-label">
+					Ім’я
+					<input type="text" class="modal-input" />
+				</label>
+
+				<label class="modal-label">
+					Телефон
+					<input type="tel" class="modal-input" />
+				</label>
+
+				<label class="modal-label">
+					Пошта
+					<input type="email" class="modal-input" />
+				</label>
+
+				<label class="modal-label">
+					Коментар
+					<textarea
+						class="modal-textarea"
+						placeholder="Введіть текст"
+					></textarea>
+				</label>
+
+				<label class="modal-checkbox">
+					<input type="checkbox" />
+					Погоджуюся з розсилкою та приймаю
+					<a href="#">Умови договору</a>
+				</label>
+
+				<button type="submit" class="modal-btn">Відправити</button>
+			</form>
+		</div>
+	</div>
+	<body>
+		<a href="portfolio.html" class="skip-link">Моє портфоліо</a>
+
+		<header>
+			<div class="container header-container">
+				<a href="index.html" class="logo"><span>Web</span>Studio</a>
+				<nav>
+					<ul class="nav-list">
+						<li><a href="index.html" class="nav-link active">Студія</a></li>
+						<li><a href="portfolio.html" class="nav-link">Портфоліо</a></li>
+						<li><a href="#" class="nav-link">Контакти</a></li>
+					</ul>
+				</nav>
+				<div class="contacts">
+					<a href="mailto:info@devstudio.com" class="contact-link"
+						>info@devstudio.com</a
+					>
+					<a href="tel:+380961111111" class="contact-link">+38 096 111 11 11</a>
+				</div>
+			</div>
+		</header>
+
+		<main>
+			<section class="hero">
+				<div class="container">
+					<h1 class="hero-title">ЕФЕКТИВНІ РІШЕННЯ ДЛЯ ВАШОГО БІЗНЕСУ</h1>
+					<button type="button" class="btn" data-modal-open>
+						Замовити послугу
+					</button>
+				</div>
+			</section>
+
+			<section class="features container">
+				<div class="feature">
+					<h3>УВАГА ДО ДЕТАЛЕЙ</h3>
+					<p>
+						Ідейні міркування, і навіть початок повсякденної роботи з формування
+						позиції.
+					</p>
+				</div>
+				<div class="feature">
+					<h3>ПУНКТУАЛЬНІСТЬ</h3>
+					<p>
+						Завдання організації, особливо рамки і місце навчання кадрів тягне у
+						себе.
+					</p>
+				</div>
+				<div class="feature">
+					<h3>ПЛАНУВАННЯ</h3>
+					<p>Так само консультація з широким активом значною мірою зумовлює.</p>
+				</div>
+				<div class="feature">
+					<h3>СУЧАСНІ ТЕХНОЛОГІЇ</h3>
+					<p>
+						Значимість цих проблем настільки очевидна, що реалізація планових
+						завдань.
+					</p>
+				</div>
+			</section>
+
+			<section class="work container">
+				<h2>Чим ми займаємося</h2>
+				<div class="work-gallery">
+					<div class="work-item">
+						<img src="./images/programer work.webp" alt="Десктопні додатки" />
+						<p class="work-label">ДЕСКТОПНІ ДОДАТКИ</p>
+					</div>
+
+					<div class="work-item">
+						<img src="./images/designers.webp" alt="Мобільні додатки" />
+						<p class="work-label">МОБІЛЬНІ ДОДАТКИ</p>
+					</div>
+
+					<div class="work-item">
+						<img src="./images/webdesign.webp" alt="Дизайнерські рішення" />
+						<p class="work-label">ДИЗАЙНЕРСЬКІ РІШЕННЯ</p>
+					</div>
+				</div>
+			</section>
+
+			<section class="team">
+				<div class="container">
+					<h2>Наша команда</h2>
+					<div class="team-list">
+						<!-- Team card 1 -->
+						<article class="team-card">
+							<img src="./images/igor.webp" alt="Ігор Дем'яненко" />
+							<h3>Ігор Дем'яненко</h3>
+							<p class="role">Product Designer</p>
+
+							<div class="socials" aria-label="Соціальні мережі Ігор">
+								<a
+									href="#"
+									class="social"
+									aria-label="Instagram"
+									title="Instagram"
+								>
+									<!-- Instagram SVG -->
+									<svg
+										viewBox="0 0 24 24"
+										width="20"
+										height="20"
+										aria-hidden="true"
+										focusable="false"
+									>
+										<rect
+											x="2"
+											y="2"
+											width="20"
+											height="20"
+											rx="5"
+											ry="5"
+											fill="none"
+											stroke="currentColor"
+											stroke-width="1.5"
+										/>
+										<circle
+											cx="12"
+											cy="12"
+											r="3.2"
+											fill="none"
+											stroke="currentColor"
+											stroke-width="1.6"
+										/>
+										<circle cx="17.5" cy="6.5" r="0.7" fill="currentColor" />
+									</svg>
+								</a>
+
+								<a href="#" class="social" aria-label="Twitter" title="Twitter">
+									<!-- Twitter SVG -->
+									<svg
+										viewBox="0 0 24 24"
+										width="20"
+										height="20"
+										aria-hidden="true"
+										focusable="false"
+									>
+										<path
+											d="M22 5.8c-.6.3-1.1.5-1.8.6.7-.4 1.1-1 1.3-1.7-.6.4-1.3.6-2 .8-.6-.6-1.5-1-2.4-1-1.8 0-3.2 1.5-3.2 3.4 0 .3 0 .6.1.9-2.7-.1-5-1.5-6.6-3.6-.3.6-.5 1.2-.5 1.9 0 1.3.7 2.5 1.7 3.2-.5 0-1-.2-1.5-.4v.1c0 1.7 1.2 3.2 2.7 3.6-.4.1-.9.2-1.3.2-.3 0-.6 0-.9-.1.6 1.9 2.5 3.3 4.6 3.3-1.7 1.3-3.8 2-6.1 2-.4 0-.8 0-1.2-.1 2.2 1.4 4.8 2.2 7.6 2.2 9.2 0 14.3-7.7 14.3-14.4v-.7c1-.8 1.7-1.6 2.3-2.6-.6.3-1.3.6-2.1.7z"
+											fill="currentColor"
+										/>
+									</svg>
+								</a>
+
+								<a
+									href="#"
+									class="social"
+									aria-label="Facebook"
+									title="Facebook"
+								>
+									<!-- Facebook SVG -->
+									<svg
+										viewBox="0 0 24 24"
+										width="20"
+										height="20"
+										aria-hidden="true"
+										focusable="false"
+									>
+										<path
+											d="M22 12.1C22 6.6 17.5 2 12 2S2 6.6 2 12.1c0 5 3.7 9.1 8.5 9.9v-7h-2.6v-2.9h2.6V9.1c0-2.6 1.5-4 3.8-4 1.1 0 2.2.2 2.2.2v2.4h-1.2c-1.2 0-1.6.8-1.6 1.6v1.9h2.8l-.4 2.9h-2.4v7C18.3 21.2 22 17.1 22 12.1z"
+											fill="currentColor"
+										/>
+									</svg>
+								</a>
+
+								<a
+									href="#"
+									class="social"
+									aria-label="LinkedIn"
+									title="LinkedIn"
+								>
+									<!-- LinkedIn SVG -->
+									<svg
+										viewBox="0 0 24 24"
+										width="20"
+										height="20"
+										aria-hidden="true"
+										focusable="false"
+									>
+										<path
+											d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM.5 8h4V23h-4zM8.5 8h3.8v2.1h.1c.5-1 1.9-2.1 3.9-2.1 4.2 0 5 2.7 5 6.3V23h-4V15.4c0-1.8 0-4.1-2.5-4.1-2.5 0-2.9 2-2.9 4v7.7h-4z"
+											fill="currentColor"
+										/>
+									</svg>
+								</a>
+							</div>
+						</article>
+
+						<!-- Team card 2 -->
+						<article class="team-card">
+							<img src="./images/olha.webp" alt="Ольга Рєпіна" />
+							<h3>Ольга Рєпіна</h3>
+							<p class="role">Frontend Developer</p>
+
+							<div class="socials" aria-label="Соціальні мережі Ольга">
+								<a
+									href="#"
+									class="social"
+									aria-label="Instagram"
+									title="Instagram"
+								>
+									<svg
+										viewBox="0 0 24 24"
+										width="20"
+										height="20"
+										aria-hidden="true"
+										focusable="false"
+									>
+										<rect
+											x="2"
+											y="2"
+											width="20"
+											height="20"
+											rx="5"
+											ry="5"
+											fill="none"
+											stroke="currentColor"
+											stroke-width="1.5"
+										/>
+										<circle
+											cx="12"
+											cy="12"
+											r="3.2"
+											fill="none"
+											stroke="currentColor"
+											stroke-width="1.6"
+										/>
+										<circle cx="17.5" cy="6.5" r="0.7" fill="currentColor" />
+									</svg>
+								</a>
+
+								<a href="#" class="social" aria-label="Twitter" title="Twitter">
+									<svg
+										viewBox="0 0 24 24"
+										width="20"
+										height="20"
+										aria-hidden="true"
+										focusable="false"
+									>
+										<path
+											d="M22 5.8c-.6.3-1.1.5-1.8.6.7-.4 1.1-1 1.3-1.7-.6.4-1.3.6-2 .8-.6-.6-1.5-1-2.4-1-1.8 0-3.2 1.5-3.2 3.4 0 .3 0 .6.1.9-2.7-.1-5-1.5-6.6-3.6-.3.6-.5 1.2-.5 1.9 0 1.3.7 2.5 1.7 3.2-.5 0-1-.2-1.5-.4v.1c0 1.7 1.2 3.2 2.7 3.6-.4.1-.9.2-1.3.2-.3 0-.6 0-.9-.1.6 1.9 2.5 3.3 4.6 3.3-1.7 1.3-3.8 2-6.1 2-.4 0-.8 0-1.2-.1 2.2 1.4 4.8 2.2 7.6 2.2 9.2 0 14.3-7.7 14.3-14.4v-.7c1-.8 1.7-1.6 2.3-2.6-.6.3-1.3.6-2.1.7z"
+											fill="currentColor"
+										/>
+									</svg>
+								</a>
+
+								<a
+									href="#"
+									class="social"
+									aria-label="Facebook"
+									title="Facebook"
+								>
+									<svg
+										viewBox="0 0 24 24"
+										width="20"
+										height="20"
+										aria-hidden="true"
+										focusable="false"
+									>
+										<path
+											d="M22 12.1C22 6.6 17.5 2 12 2S2 6.6 2 12.1c0 5 3.7 9.1 8.5 9.9v-7h-2.6v-2.9h2.6V9.1c0-2.6 1.5-4 3.8-4 1.1 0 2.2.2 2.2.2v2.4h-1.2c-1.2 0-1.6.8-1.6 1.6v1.9h2.8l-.4 2.9h-2.4v7C18.3 21.2 22 17.1 22 12.1z"
+											fill="currentColor"
+										/>
+									</svg>
+								</a>
+
+								<a
+									href="#"
+									class="social"
+									aria-label="LinkedIn"
+									title="LinkedIn"
+								>
+									<svg
+										viewBox="0 0 24 24"
+										width="20"
+										height="20"
+										aria-hidden="true"
+										focusable="false"
+									>
+										<path
+											d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM.5 8h4V23h-4zM8.5 8h3.8v2.1h.1c.5-1 1.9-2.1 3.9-2.1 4.2 0 5 2.7 5 6.3V23h-4V15.4c0-1.8 0-4.1-2.5-4.1-2.5 0-2.9 2-2.9 4v7.7h-4z"
+											fill="currentColor"
+										/>
+									</svg>
+								</a>
+							</div>
+						</article>
+
+						<!-- Team card 3 -->
+						<article class="team-card">
+							<img src="./images/mikola.webp" alt="Микола Тарасов" />
+							<h3>Микола Тарасов</h3>
+							<p class="role">Marketing</p>
+
+							<div class="socials" aria-label="Соціальні мережі Микола">
+								<a
+									href="#"
+									class="social"
+									aria-label="Instagram"
+									title="Instagram"
+								>
+									<svg
+										viewBox="0 0 24 24"
+										width="20"
+										height="20"
+										aria-hidden="true"
+										focusable="false"
+									>
+										<rect
+											x="2"
+											y="2"
+											width="20"
+											height="20"
+											rx="5"
+											ry="5"
+											fill="none"
+											stroke="currentColor"
+											stroke-width="1.5"
+										/>
+										<circle
+											cx="12"
+											cy="12"
+											r="3.2"
+											fill="none"
+											stroke="currentColor"
+											stroke-width="1.6"
+										/>
+										<circle cx="17.5" cy="6.5" r="0.7" fill="currentColor" />
+									</svg>
+								</a>
+
+								<a href="#" class="social" aria-label="Twitter" title="Twitter">
+									<svg
+										viewBox="0 0 24 24"
+										width="20"
+										height="20"
+										aria-hidden="true"
+										focusable="false"
+									>
+										<path
+											d="M22 5.8c-.6.3-1.1.5-1.8.6.7-.4 1.1-1 1.3-1.7-.6.4-1.3.6-2 .8-.6-.6-1.5-1-2.4-1-1.8 0-3.2 1.5-3.2 3.4 0 .3 0 .6.1.9-2.7-.1-5-1.5-6.6-3.6-.3.6-.5 1.2-.5 1.9 0 1.3.7 2.5 1.7 3.2-.5 0-1-.2-1.5-.4v.1c0 1.7 1.2 3.2 2.7 3.6-.4.1-.9.2-1.3.2-.3 0-.6 0-.9-.1.6 1.9 2.5 3.3 4.6 3.3-1.7 1.3-3.8 2-6.1 2-.4 0-.8 0-1.2-.1 2.2 1.4 4.8 2.2 7.6 2.2 9.2 0 14.3-7.7 14.3-14.4v-.7c1-.8 1.7-1.6 2.3-2.6-.6.3-1.3.6-2.1.7z"
+											fill="currentColor"
+										/>
+									</svg>
+								</a>
+
+								<a
+									href="#"
+									class="social"
+									aria-label="Facebook"
+									title="Facebook"
+								>
+									<svg
+										viewBox="0 0 24 24"
+										width="20"
+										height="20"
+										aria-hidden="true"
+										focusable="false"
+									>
+										<path
+											d="M22 12.1C22 6.6 17.5 2 12 2S2 6.6 2 12.1c0 5 3.7 9.1 8.5 9.9v-7h-2.6v-2.9h2.6V9.1c0-2.6 1.5-4 3.8-4 1.1 0 2.2.2 2.2.2v2.4h-1.2c-1.2 0-1.6.8-1.6 1.6v1.9h2.8l-.4 2.9h-2.4v7C18.3 21.2 22 17.1 22 12.1z"
+											fill="currentColor"
+										/>
+									</svg>
+								</a>
+
+								<a
+									href="#"
+									class="social"
+									aria-label="LinkedIn"
+									title="LinkedIn"
+								>
+									<svg
+										viewBox="0 0 24 24"
+										width="20"
+										height="20"
+										aria-hidden="true"
+										focusable="false"
+									>
+										<path
+											d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM.5 8h4V23h-4zM8.5 8h3.8v2.1h.1c.5-1 1.9-2.1 3.9-2.1 4.2 0 5 2.7 5 6.3V23h-4V15.4c0-1.8 0-4.1-2.5-4.1-2.5 0-2.9 2-2.9 4v7.7h-4z"
+											fill="currentColor"
+										/>
+									</svg>
+								</a>
+							</div>
+						</article>
+
+						<!-- Team card 4 -->
+						<article class="team-card">
+							<img src="./images/ermakov.webp" alt="Михайло Єрмаков" />
+							<h3>Михайло Єрмаков</h3>
+							<p class="role">UI Designer</p>
+
+							<div class="socials" aria-label="Соціальні мережі Михайло">
+								<a
+									href="#"
+									class="social"
+									aria-label="Instagram"
+									title="Instagram"
+								>
+									<svg
+										viewBox="0 0 24 24"
+										width="20"
+										height="20"
+										aria-hidden="true"
+										focusable="false"
+									>
+										<rect
+											x="2"
+											y="2"
+											width="20"
+											height="20"
+											rx="5"
+											ry="5"
+											fill="none"
+											stroke="currentColor"
+											stroke-width="1.5"
+										/>
+										<circle
+											cx="12"
+											cy="12"
+											r="3.2"
+											fill="none"
+											stroke="currentColor"
+											stroke-width="1.6"
+										/>
+										<circle cx="17.5" cy="6.5" r="0.7" fill="currentColor" />
+									</svg>
+								</a>
+
+								<a href="#" class="social" aria-label="Twitter" title="Twitter">
+									<svg
+										viewBox="0 0 24 24"
+										width="20"
+										height="20"
+										aria-hidden="true"
+										focusable="false"
+									>
+										<path
+											d="M22 5.8c-.6.3-1.1.5-1.8.6.7-.4 1.1-1 1.3-1.7-.6.4-1.3.6-2 .8-.6-.6-1.5-1-2.4-1-1.8 0-3.2 1.5-3.2 3.4 0 .3 0 .6.1.9-2.7-.1-5-1.5-6.6-3.6-.3.6-.5 1.2-.5 1.9 0 1.3.7 2.5 1.7 3.2-.5 0-1-.2-1.5-.4v.1c0 1.7 1.2 3.2 2.7 3.6-.4.1-.9.2-1.3.2-.3 0-.6 0-.9-.1.6 1.9 2.5 3.3 4.6 3.3-1.7 1.3-3.8 2-6.1 2-.4 0-.8 0-1.2-.1 2.2 1.4 4.8 2.2 7.6 2.2 9.2 0 14.3-7.7 14.3-14.4v-.7c1-.8 1.7-1.6 2.3-2.6-.6.3-1.3.6-2.1.7z"
+											fill="currentColor"
+										/>
+									</svg>
+								</a>
+
+								<a
+									href="#"
+									class="social"
+									aria-label="Facebook"
+									title="Facebook"
+								>
+									<svg
+										viewBox="0 0 24 24"
+										width="20"
+										height="20"
+										aria-hidden="true"
+										focusable="false"
+									>
+										<path
+											d="M22 12.1C22 6.6 17.5 2 12 2S2 6.6 2 12.1c0 5 3.7 9.1 8.5 9.9v-7h-2.6v-2.9h2.6V9.1c0-2.6 1.5-4 3.8-4 1.1 0 2.2.2 2.2.2v2.4h-1.2c-1.2 0-1.6.8-1.6 1.6v1.9h2.8l-.4 2.9h-2.4v7C18.3 21.2 22 17.1 22 12.1z"
+											fill="currentColor"
+										/>
+									</svg>
+								</a>
+
+								<a
+									href="#"
+									class="social"
+									aria-label="LinkedIn"
+									title="LinkedIn"
+								>
+									<svg
+										viewBox="0 0 24 24"
+										width="20"
+										height="20"
+										aria-hidden="true"
+										focusable="false"
+									>
+										<path
+											d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM.5 8h4V23h-4zM8.5 8h3.8v2.1h.1c.5-1 1.9-2.1 3.9-2.1 4.2 0 5 2.7 5 6.3V23h-4V15.4c0-1.8 0-4.1-2.5-4.1-2.5 0-2.9 2-2.9 4v7.7h-4z"
+											fill="currentColor"
+										/>
+									</svg>
+								</a>
+							</div>
+						</article>
+					</div>
+				</div>
+			</section>
+			<section class="clients-section">
+				<h2>Постійні клієнти</h2>
+				<div class="logos-container">
+					<div class="client-logo">
+						<img src="./images/YA&CO.webp" alt="Логотип YA&CO" />
+					</div>
+
+					<div class="client-logo highlighted">
+						<img
+							src="./images/Companytagline.webp"
+							alt="Логотип CompanyTagLine"
+						/>
+					</div>
+
+					<div class="client-logo">
+						<img src="./images/Company.webp" alt="Логотип Company" />
+					</div>
+
+					<div class="client-logo highlighted-blue">
+						<img src="./images/FosterPeters.webp" alt="Логотип Foster Peters" />
+					</div>
+
+					<div class="client-logo">
+						<img src="./images/Brand.webp" alt="Логотип Brand" />
+					</div>
+
+					<div class="client-logo">
+						<img src="./images/CompanyTag.webp" alt="Логотип Box Company" />
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<footer>
+			<div class="container">
+				<a href="#" class="logo"><span>Web</span>Studio</a>
+				<p>м. Київ, пр-т Лесі Українки, 26</p>
+				<a href="mailto:info@devstudio.com">info@devstudio.com</a><br />
+				<a href="tel:+380961111111">+38 096 111 11 11</a>
+			</div>
+			<div class="footer-subscribe">
+				<h4>Підпишіться на розсилку</h4>
+
+				<form class="subscribe-form">
+					<input type="email" placeholder="E-mail" required />
+					<button type="submit">Підписатися</button>
+				</form>
+			</div>
+		</footer>
+	</body>
+</html>
