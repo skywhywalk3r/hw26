@@ -1,22 +1,53 @@
 <!DOCTYPE html>
 <html lang="uk">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width,initial-scale=1" />
-		<title>WebStudio</title>
-		<link rel="stylesheet" href="styles.css" />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Roboto:wght@400;500;700;900&display=swap"
-			rel="stylesheet"
-		/>
-	</head>
-	<div class="backdrop is-hidden" data-modal>
-		<div class="modal">
-			<button type="button" class="modal-close" data-modal-close>
-				&times;
-			</button>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>WebStudio</title>
 
-			<h2 class="modal-title">Залиште свої дані, ми вам передзвонимо</h2>
+	<link rel="stylesheet" href="styles.css" />
+	<link
+		href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Roboto:wght@400;500;700;900&display=swap"
+		rel="stylesheet"
+	/>
+</head>
+
+	<header>
+		<div class="container header-container">
+			<a href="index.html" class="logo"><span>Web</span>Studio</a>
+			<nav>
+				<ul class="nav-list">
+					<li><a href="index.html" class="nav-link active">Студія</a></li>
+					<li><a href="portfolio.html" class="nav-link">Портфоліо</a></li>
+					<li><a href="#" class="nav-link">Контакти</a></li>
+				</ul>
+			</nav>
+			<div class="contacts">
+				<a href="mailto:info@devstudio.com" class="contact-link"
+					>info@devstudio.com</a
+				>
+				<a href="tel:+380961111111" class="contact-link">+38 096 111 11 11</a>
+			</div>
+		</div>
+	</header>
+
+	<main>
+		<section class="hero">
+			<div class="container">
+				<h1 class="hero-title">
+					ЕФЕКТИВНІ РІШЕННЯ ДЛЯ ВАШОГО БІЗНЕСУ
+				</h1>
+				<a href="#modal" class="btn">Замовити послугу</a>
+			</div>
+		</section>
+	</main>
+	<div id="modal" class="backdrop">
+		<div class="modal">
+			<a href="#" class="modal-close">&times;</a>
+
+			<h2 class="modal-title">
+				Залиште свої дані, ми вам передзвонимо
+			</h2>
 
 			<form class="modal-form">
 				<label class="modal-label">
@@ -48,69 +79,14 @@
 					<a href="#">Умови договору</a>
 				</label>
 
-				<button type="submit" class="modal-btn">Відправити</button>
+				<button type="submit" class="modal-btn">
+					Відправити
+				</button>
 			</form>
 		</div>
 	</div>
-	<body>
-		<a href="portfolio.html" class="skip-link">Моє портфоліо</a>
-
-		<header>
-			<div class="container header-container">
-				<a href="index.html" class="logo"><span>Web</span>Studio</a>
-				<nav>
-					<ul class="nav-list">
-						<li><a href="index.html" class="nav-link active">Студія</a></li>
-						<li><a href="portfolio.html" class="nav-link">Портфоліо</a></li>
-						<li><a href="#" class="nav-link">Контакти</a></li>
-					</ul>
-				</nav>
-				<div class="contacts">
-					<a href="mailto:info@devstudio.com" class="contact-link"
-						>info@devstudio.com</a
-					>
-					<a href="tel:+380961111111" class="contact-link">+38 096 111 11 11</a>
-				</div>
-			</div>
-		</header>
-
-		<main>
-			<section class="hero">
-				<div class="container">
-					<h1 class="hero-title">ЕФЕКТИВНІ РІШЕННЯ ДЛЯ ВАШОГО БІЗНЕСУ</h1>
-					<button type="button" class="btn" data-modal-open>
-						Замовити послугу
-					</button>
-				</div>
-			</section>
-
-			<section class="features container">
-				<div class="feature">
-					<h3>УВАГА ДО ДЕТАЛЕЙ</h3>
-					<p>
-						Ідейні міркування, і навіть початок повсякденної роботи з формування
-						позиції.
-					</p>
-				</div>
-				<div class="feature">
-					<h3>ПУНКТУАЛЬНІСТЬ</h3>
-					<p>
-						Завдання організації, особливо рамки і місце навчання кадрів тягне у
-						себе.
-					</p>
-				</div>
-				<div class="feature">
-					<h3>ПЛАНУВАННЯ</h3>
-					<p>Так само консультація з широким активом значною мірою зумовлює.</p>
-				</div>
-				<div class="feature">
-					<h3>СУЧАСНІ ТЕХНОЛОГІЇ</h3>
-					<p>
-						Значимість цих проблем настільки очевидна, що реалізація планових
-						завдань.
-					</p>
-				</div>
-			</section>
+</body>
+</html>
 
 			<section class="work container">
 				<h2>Чим ми займаємося</h2>
@@ -136,7 +112,6 @@
 				<div class="container">
 					<h2>Наша команда</h2>
 					<div class="team-list">
-						<!-- Team card 1 -->
 						<article class="team-card">
 							<img src="./images/igor.webp" alt="Ігор Дем'яненко" />
 							<h3>Ігор Дем'яненко</h3>
@@ -149,7 +124,6 @@
 									aria-label="Instagram"
 									title="Instagram"
 								>
-									<!-- Instagram SVG -->
 									<svg
 										viewBox="0 0 24 24"
 										width="20"
@@ -181,7 +155,6 @@
 								</a>
 
 								<a href="#" class="social" aria-label="Twitter" title="Twitter">
-									<!-- Twitter SVG -->
 									<svg
 										viewBox="0 0 24 24"
 										width="20"
@@ -202,7 +175,6 @@
 									aria-label="Facebook"
 									title="Facebook"
 								>
-									<!-- Facebook SVG -->
 									<svg
 										viewBox="0 0 24 24"
 										width="20"
@@ -223,7 +195,6 @@
 									aria-label="LinkedIn"
 									title="LinkedIn"
 								>
-									<!-- LinkedIn SVG -->
 									<svg
 										viewBox="0 0 24 24"
 										width="20"
@@ -239,8 +210,6 @@
 								</a>
 							</div>
 						</article>
-
-						<!-- Team card 2 -->
 						<article class="team-card">
 							<img src="./images/olha.webp" alt="Ольга Рєпіна" />
 							<h3>Ольга Рєпіна</h3>
@@ -339,8 +308,6 @@
 								</a>
 							</div>
 						</article>
-
-						<!-- Team card 3 -->
 						<article class="team-card">
 							<img src="./images/mikola.webp" alt="Микола Тарасов" />
 							<h3>Микола Тарасов</h3>
@@ -439,8 +406,6 @@
 								</a>
 							</div>
 						</article>
-
-						<!-- Team card 4 -->
 						<article class="team-card">
 							<img src="./images/ermakov.webp" alt="Михайло Єрмаков" />
 							<h3>Михайло Єрмаков</h3>
