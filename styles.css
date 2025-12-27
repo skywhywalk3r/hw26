@@ -474,14 +474,20 @@ footer a {
 	position: absolute;
 	top: 8px;
 	right: 8px;
-
 	width: 30px;
 	height: 30px;
-
 	border-radius: 50%;
 	border: 1px solid #0000001a;
 	background: #fff;
 	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-decoration: none;
+	color: #000;
+	font-size: 20px;
+	line-height: 0;
+	padding: 0;
 }
 
 .modal-close:hover {
@@ -509,7 +515,6 @@ footer a {
 }
 
 .modal-textarea {
-	resize: none;
 	height: 100px;
 }
 
