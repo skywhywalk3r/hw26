@@ -127,7 +127,6 @@ header {
 	display: flex;
 	gap: 14px;
 	justify-content: center;
-	flex-wrap: wrap;
 }
 .work-gallery img {
 	width: 100%;
